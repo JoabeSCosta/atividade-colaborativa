@@ -7,8 +7,8 @@ function App() {
   const [result, setResult] = useState(null);
 
   const handleSum = () => {
-    setResult(Number(num1) * Number(num2)); 
-    // BUG: deveria somar, mas multiplica
+    setResult(Number(num1) + Number(num2)); 
+    
   };
 
   const handleSubtract = () => {
