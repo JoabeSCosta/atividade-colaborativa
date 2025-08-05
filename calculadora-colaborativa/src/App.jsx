@@ -20,8 +20,11 @@ function App() {
   };
 
   const handleDivide = () => {
-    // BUG: divisão por zero não é tratada
+    if (Number(num2) === 0) {
+    setResult('Erro: divisão por zero');
+  } else {
     setResult(Number(num1) / Number(num2));
+  }
   };
 
   return (
