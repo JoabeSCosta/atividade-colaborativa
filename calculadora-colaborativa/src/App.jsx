@@ -27,6 +27,12 @@ function App() {
   }
   };
 
+  const handleClear = () => {
+  setNum1('');
+  setNum2('');
+  setResult(null);
+};
+
   return (
     <div className="container">
       <h1>Calculadora com Bugs</h1>
@@ -49,6 +55,7 @@ function App() {
         <button onClick={handleSubtract}>Subtrair</button>
         <button onClick={handleMultiply}>Multiplicar</button>
         <button onClick={handleDivide}>Dividir</button>
+        <button onClick={handleClear}>Limpar</button>
       </div>
       {result !== null && (
         <div className="result">
